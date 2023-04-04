@@ -1,0 +1,317 @@
+/* Navbar CSS */
+.navbar {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+
+  font-weight: bold;
+  
+}
+.navbar .navbar-brand{
+  color: #F44336;
+
+}
+
+
+.navbar-nav {
+  margin-left: 45%;
+}
+
+.nav-link {
+  color: #F44336 !important;
+ 
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #212529 !important
+}
+
+
+
+
+
+
+
+
+
+/* Off-canvas menu CSS */
+.offcanvas-header {
+  background-color:  #F44336;
+  color: #e0bbbb;
+}
+.offcanvas-title {
+  color: #fff;
+}
+.btn-close {
+  color: #fff;
+}
+
+
+.navbar-toggler .navbar-toggler-icon {
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-toggler .navbar-toggler-icon .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+   left: 0;
+  transform-origin: center center;
+   transition: transform 0.50s ease-out
+}
+ 
+.navbar-toggler .navbar-toggler-icon .line:nth-of-type(1) {
+  top: 0;
+  transform: translateY(85%);
+}
+
+
+.navbar-toggler .navbar-toggler-icon .line:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-toggler .navbar-toggler-icon .line:nth-of-type(3) {
+  bottom: 0;
+   transform: translateY(-85%);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .line:nth-of-type(1),
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .line:nth-of-type(3) {
+  transform: translateY(50%) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon .line:nth-of-type(2) {
+  transform: translateY(-50%) rotate(45deg);
+} */
+
+
+
+
+
+.hero {
+  color: #fff;
+  /* text-align: center; */
+  /* margin-top: 70px; */
+}
+/* Set height of video container */
+
+
+section.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9 0px;
+
+}
+
+section.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title_wrapper{
+  margin-top: 10%;
+}
+
+
+
+
+.hero__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slide-down 3s ease forwards;
+  opacity: 0;
+  transform: translateY(-50px);
+  color: #dee2e6;
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.hero__subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #dee2e6;
+}
+
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-10px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-5px); }
+  80% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.animated {
+
+  animation-fill-mode: both;
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+  animation-duration: 3s; /* or any other value you want */
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px) scale(0.3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(25px) scale(1.1);
+  }
+
+  80% {
+    transform: translateX(-10px) scale(0.9);
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+
+
+
+.hero__cta {
+  font-size: 18px;
+  padding: 12px 30px;
+}
+.hero__cta {
+  background-color: #F44336;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero__cta:hover {
+  background-color: #fff;
+  color: #F44336;
+}
+
+
+
+.hero__cta_two {
+  font-size: 18px;
+  padding: 12px 30px;
+}
+.hero__cta_two {
+  background-color: #ffffff;
+  color:#F44336;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero__cta_two:hover {
+  background-color: #F44336;
+  color: white
+}
+.the_cards{
+  margin-top: 50px;
+}
+
+
+
+
+
+/*learn how anchor tag*/
+.hover-translate {
+  transition: transform 0.2s ease-out;
+}
+
+.hover-translate:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer CSS */
+.footer {
+  background-color: #f5f5f5 #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer p {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 24px;
+}
+.list-unstyled li a {
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none; /* remove underline */
+}
+.list-unstyled li a:hover {
+  color: #0d6efd;
+  text-decoration: underline; /* add underline on hover */
+}
+.social-icons li a {
+  color: #6c757d;
+  font-size: 18px;
+}
+.social-icons li a:hover {
+  color: #0d6efd;
+}

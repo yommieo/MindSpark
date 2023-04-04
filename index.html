@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Discovery Channel</title>
+      <!-- Link to Bootstrap CSS file -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <!-- Link to Font Awesome CSS file -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/bootstrap-grid.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="responsiveness.css">
+      <style>
+        /* Your CSS code here */
+        
+          @media (max-width: 991px) {
+            .offcanvas {
+              background-image: url(Assets/mental_stress.jpg);
+              background-repeat: no-repeat;
+              background-size: cover; 
+              background-position: center center;
+            }
+          }
+      </style>
+  </head>  
+  <body> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MindSpark</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Know yourself</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mental Structure</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Career Path</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ted talks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <video src="Assets/Mind_Spark_bgVideo.mp4" autoplay loop muted playsinline></video>
+      <div class="overlay">
+        <div class="container title_wrapper">
+          <div class="hero__title-wrapper">
+            <h1 class="hero__title">Introducing the Revolutionary <br> MindSpark Software</h1>
+          </div>
+          <p class="hero__subtitle lead animated bounceInLeft">Unleash your full potential and achieve your dreams with MindSpark</p>
+          <a href="#" class="hero__cta_two btn section-scroll btn-md btn-clean">Learn more</a>
+          <span class="spacebtn"></span>
+          <a href="#contact-section" class="hero__cta section-scroll btn btn-md btn-clean ">Get started</a>
+        </div>
+        </div>
+      </div>
+    </section>
+    <div class="container the_cards">
+      <div class="row">
+      
+        <!-- Card 1 -->
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Assets/whoami.jpg" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/know_yourslf.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title title_one lead display-6">Identity Crisis</h5>
+              <p class="card-text text_one">Discovering your true identity can be a challenging journey. Learn how to overcome an identity crisis in our latest blog post. 
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3 hover-translate">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Card 2 -->
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Assets/mental_stress.jpg" class="d-block w-100" alt="Image 1">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/Addiction_image.jpg" class="d-block w-100" alt="Image 2 ">
+                
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title title_two lead display-6">Why mental stress?</h5>
+              <p class="card-text text_two">Mental stress in teenagers is a common issue that can have various causes and consequences. 
+                Some of the common causes of mental stress in teenagers include academic pressure, social relationships, family problems, bullying, trauma, and emotional instability.... <br>
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3 hover-translate">Read more</a>
+              </p>  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col-lg-4">
+          <div class="card border-0">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Assets/job_stress.jpg" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="Assets/happiness_dimension.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title title_three lead display-6">Job stress</h5>
+              <p class="card-text text_three">Choose a job that matches your interests and skills: Finding a job that aligns with your interests and skills can help make the work more enjoyable, 
+                and you may be less likely to experience stress.<br>  
+                <a href="#" class="btn btn-primary rounded-pill px-4 py-2 mt-3 hover-translate">Read more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="footer py-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3 style="color:  #F44336;">MindSpark</h3>
+              <p>At MindSpark, we believe that every teenager has the potential to achieve greatness. We provide mentorship, counseling, and career guidance to help teenagers unleash their potential and pursue their dreams.</p>
+            </div>
+            <div class="col-md-4">
+              <h3 style="color:  #F44336;">Useful Links</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover Your Personality</a></li>
+                <li><a href="#">Career Paths</a></li>
+                <li><a href="#">Mentors</a></li>
+                <li><a href="#">Counselling</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">TedTALKS</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3 style="color:  #F44336;">Connect With Us</h3>
+              <ul class="list-unstyled social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/app.js"></script>
+  </body>
+</html>

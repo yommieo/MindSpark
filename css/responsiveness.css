@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    .text-card {
+      margin-top: 30px; /* adjust the value to fit your needs */
+    }
+  }
+  
+
+
+  /* adjust font sizes and line heights for mobile devices */
+@media (max-width: 768px) {
+    .text-card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* make the image in the image-card responsive */
+  .image-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* adjust the position of the text-card on smaller screens */
+  @media (max-width: 768px) {
+    .text-card {
+      margin-top: 30px; /* adjust the value to fit your needs */
+      margin-left: 0;
+      padding-left: 15px;
+    }
+  }
+  
+  /* adjust the width of the container on smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  
